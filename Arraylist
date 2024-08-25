@@ -1,0 +1,26 @@
+package lab9_ArrayList;
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class ArrayListExample {
+
+    public static void main(String[] args) {
+        // Create an ArrayList and add elements
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        arrayList.add(10);
+        arrayList.add(20);
+        arrayList.add(30);
+        arrayList.add(40);
+        arrayList.add(50);
+        
+        // Print the original ArrayList
+        System.out.println("Original ArrayList: " + arrayList);
+
+        // Sort the ArrayList in ascending order
+        Collections.sort(arrayList);
+        System.out.println("Sorted ArrayList: " + arrayList);
+
+        // Reverse the ArrayList
+        Collections.reverse(arrayList);
+        System.out.println("Reversed ArrayList: " + arrayList);
+    }
